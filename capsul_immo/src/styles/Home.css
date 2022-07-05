@@ -3,20 +3,23 @@
     position:absolute;
     top:100vh;
     width: 100%;
-    /*border: 2px solid rgb(78, 249, 5);*/
     z-index: 100;
     display: flex;
     justify-content: center;
-
+    overflow: hidden;
 }
 
 .home-wrapper{
     width: 91%;          
     position: relative;
     height: 100%;
-    /*border: 2px solid rgb(249, 5, 58);*/
-
 }
+
+a{
+    text-decoration: none;
+}
+
+
 
 /*************************************************
 
@@ -123,17 +126,19 @@ Home description
 }
 
 .line{
-    width: 100%;
+    position: relative;
+    left: -5%;
+    width: 99vw;
 }
 
 .line img{
     width: 100%;
-    height: 93px;
+    height: 50px;
 }
 
-.sepatator{
-    position: relative;
+.separator{
     width: 100%;
+    position: relative;
 }
 
 /****************************************
@@ -148,14 +153,13 @@ CARD
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
 }
 
 .home-card-wrapper{
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -167,6 +171,7 @@ CARD
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 120px;
 }
 
 .card-title i{
@@ -212,8 +217,8 @@ CARD
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*border: 2px solid yellow;*/
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .card-item{
@@ -224,9 +229,9 @@ CARD
     border: 2px solid rgba(0, 0, 0, 0.16);
     box-shadow: 1px 1px 10px  rgba(0, 0, 0, 0.16);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 .card-item i{
@@ -247,9 +252,418 @@ CARD
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
+    display: flex;
     text-align: center;
     position: relative;
     top:50px;
+}
+
+#mobile-icon {
+    display: none;
+}
+
+.img-shadow3,.img-shadow4,.img-shadow5{
+    position: absolute;
+    bottom: -150px;
+    z-index: -2;
+    opacity: 0.8;
+    width: 150px;
+    height: 200px;
+    right: -30px;
+}
+
+.img-shadow3 img{
+    width: 100%;
+    height: 100%;
+}
+
+.img-shadow4 img{
+    width: 100%;
+    height: 100%;
+}
+
+.car-part{
+    position: relative;
+    width: 100%;
+}
+
+.img-car {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    right: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-car img{    
+    height: 182px;
+    width: 322px;
+    border-radius: 0px;
+}
+
+.line1{
+    position: relative;
+    left: -5%;
+    width: 99vw;
+}
+
+.line1 img{
+    width: 100%;
+    height: 17px;
+}
+
+/*******************************************
+
+DESCRIPTION
+
+********************************************/
+
+.home-desc{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+}
+
+.home-desc-text{
+    position: relative;
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-desc-title{
+    position: relative;
+    width: 100%;
+    font-family: Alatsi;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.home-desc-info{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.home-desc-img{
+
+}
+
+.home-desc-img img{
+    /*width: 35%;*/  
+    width: 315px;
+    height: 277px;
+}
+
+.img-shadow5{
+    display: none;
+}
+
+.img-shadow5 img{
+    width: 100%;
+    height: 100%;
+}
+
+.line2{
+    position: relative;
+    left: -5%;
+    width: 99vw;
+}
+
+.line2 img{
+    width: 100%;
+    height: 50px;
+}
+
+.img-shadow6{
+    position: absolute;
+    bottom: -100px;
+    z-index: -2;
+    opacity: 0.8;
+    width: 150px;
+    height: 200px;
+    /*left: -20px;*/
+}
+
+.img-shadow6 img{
+    width: 100%;
+    height: 100%;
+}
+
+/*******************************************
+
+SOLUTION
+
+********************************************/
+
+.home-solution {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /*height: 110vh;*/
+}
+
+.home-solution-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    margin: 100px 0px;
+}
+
+.home-solution-title{
+    font-family: Alatsi;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.home-solution-info{
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.home-solution-desc{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.home-solution-d1{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-solution-d2{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-solution-im{
+    height: 100%;
+    width: 100%;
+}
+
+.home-solution-im img{
+    width: 80px;
+    height: 71px;
+    position: absolute;
+    top: -35px;
+}
+
+.left img{
+    left: 0px;
+}
+
+.right img{
+    right: 0px;
+}
+
+.home-solution-item{
+    display: flex;
+    height: 200px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-solution-item div{
+    color: #F3BA4B;
+    font-family: Alatsi;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.home-solution-item p{
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.home-solution-cite {
+    font-family: Source Sans Pro;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0E0E0E;
+    position: absolute;
+    bottom: -60px;
+    left: 0px;
+}
+
+.line3{
+    position: relative;
+    left: -5%;
+    width: 99vw;
+    margin-top: 20px;
+}
+
+.line3 img{
+    width: 100%;
+    height: 50px;
+    transform: rotate(177deg);
+}
+
+.img-shadow7{
+    position: absolute;
+    bottom: -100px;
+    z-index: -2;
+    opacity: 0.8;
+    width: 150px;
+    height: 200px;
+    right: 0px;
+}
+
+.img-shadow7 img{
+    width: 100%;
+    height: 100%;
+}
+
+/*******************************************
+
+CONTACT
+
+********************************************/
+
+.home-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 140px;
+    position: relative;
+}
+
+.home-contact-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 48%;
+}
+
+.card-contact{
+    border-radius: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.12);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 90px;
+}
+
+.card-contact-text{
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-contact-cta a{
+    font-size: 16px;
+    padding: 10px 60px;
+    background-color: #F3BA4B;
+    color: white;
+    cursor: pointer;
+}
+
+.text-col{
+    color: #F3BA4B;
+}
+
+.text-under{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.hearphone{
+    width: 508px;
+    height: 459px;
+    position: absolute;
+    left: -70px;
+    bottom: 144px;
+}
+
+.hearphone img{
+    width: 100%;
+    height: 100%;
+}
+
+#copyright{
+    width: 100%;
+}
+
+#copyright p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #0E0E0E;
+}
+
+.img-shadow8{
+    display: none;
+    position: absolute;
+    bottom: 230px;
+    z-index: -2;
+    opacity: 0.8;
+    width: 150px;
+    height: 200px;
+    left: 0px;
+}
+
+.img-shadow8 img{
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width:1000px){
@@ -268,10 +682,6 @@ CARD
         height: 377px;
     }
 
-    .home-description-pic{
-        align-items: center;
-    }
-
     .img-shadow1{
         top:50px;
     }
@@ -288,13 +698,22 @@ CARD
 
     .card-title-text p{
         font-size: 25px;
-        line-height: 28px;
     }
 
     .card-title-text div{
         font-size: 41px;
-        line-height: 60px;
     }
+
+    .home-solution-title{
+        margin-bottom: 40px;
+    }
+
+    .hearphone{
+        width: 406px;
+        height: 367px;
+        bottom: 164px;
+    }
+    
 }
 
 @media screen and (max-width:890px) {
@@ -347,32 +766,30 @@ CARD
         left: 20px;
     }
 
-    .sepatator{
+    .separator{
         width: 100%;
         top:50px;
     }
 
     .img-shadow2{
-        top: 0px;
-        right: 0px;
+        top: -60px;
+        right: -10px;
         opacity: 1;
     }
 
     .card-item i{
-        /*top: -31px;*/
         font-size: 144px;
         font-weight: 400;
         line-height: 56px;
     }
 
-    .card-title{
-        /*flex-direction: column;*/
+    .card-item p{
+        width: 94%;
+        height: 350px;
     }
 
     .card-title i{
-        /*top: -31px;*/
         left: 0;
-
         font-size: 144px;
         font-weight: 400;
         line-height: 56px;
@@ -380,20 +797,246 @@ CARD
 
     .card-title-text p{
         font-size: 25px;
-        line-height: 28px;
+        line-height: 18px;
     }
 
     .card-title-text div{
         font-size: 41px;
         line-height: 60px;
     }
+    
+    .card-title-text div{
+        font-size: 34px;
+        line-height: 32px;
+        margin-bottom: 30px;
+    }
+    
+    .card-title-text p{
+        font-size: 20px;
+    }
+
+    .img-car img{
+        height: 160px;
+        width: 280px;
+    }
+
+    .home-desc{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 50px;
+        height: 150%;
+    }
+    
+    .home-desc-text{
+        width: 100%;
+        margin: 20px 0px;
+    }
+    
+    .home-desc-title{
+        font-size: 21px;
+        line-height: 40px;
+    }
+    
+    .home-desc-info{
+        margin-top: 20px;
+        line-height: 24px;
+        font-size: 15px;
+    }
+    
+    .home-desc-img{
+        margin: 40px 0px;
+    }
+    
+    .home-desc-img img{
+        width: 315px;
+        height: 277px;
+    }
+    
+    .home-solution-item p{
+        font-size: 12px;
+    }
+
+    .home-solution-item div{
+        font-size: 24px;
+    }
+
+    .home-solution-title{
+        font-size: 22px;
+    }
+    
+    .home-solution-info{
+        font-size: 14px;
+    }
+
+    .home-solution-cite {
+        bottom: -80px;
+        left: 0px;
+        font-size: 11px;
+    }
+
+    .home-solution-im img{
+        width: 60px;
+        height: 62px;
+    }
+
+    .img-shadow8{
+        display: block;
+    }
+
+    .hearphone{
+        width: 459px;
+        height: 459px;
+        position: absolute;
+        left: -36px;
+        bottom: -300px;
+    }
+
+    #copyright{
+        margin-top: 300px;
+    }
+
+    .home-contact-wrapper{
+        width: 80%;
+        padding: 0px 20px;
+    }
+
+}
+
+@media screen and (max-width:630px) {
+    .card-items {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .card-item{
+        width: 100%;
+        height: 180px;
+        margin-bottom: 100px;
+    }
+
+    .card-title-text div{
+        font-size: 30px;
+        line-height: 32px;
+    }
+    
+    .card-title-text p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .img-car img{
+        height: 128px;
+        width: 224px;
+    }
+
+    .img-shadow3{
+        position: absolute;
+        top: -140px;
+        left: -40px;
+    }
+
+    .img-shadow4{
+        position: absolute;
+        bottom: 240px;
+        right: -10px;
+    }
+
+    .img-shadow5{
+        position: absolute;
+        top: 0px;
+        left: -70px;
+        display: block;
+    }
+
+    .home-solution-wrapper{
+        width: 100%;
+    }
+
+    .home-solution-desc{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .home-solution-d1{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .home-solution-d2{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .home-solution-title{
+        font-size: 22px;
+    }
+    
+    .home-solution-info{
+        font-size: 14px;
+    }
+
+
+    .home-solution-im img{
+        width: 80px;
+        height: 71px;
+    }
+
+    .left img{
+        top: -40px;
+    }
+
+    .right img{
+        top: 160px;
+    }
+
+    .home-solution-im img{
+        width: 80px;
+        height: 71px;
+    }
+
+    .home-solution-cite {
+        bottom: -70px;
+        font-size: 10px;
+    }
+
+    .home-solution-item p{
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .home-solution-item div{
+        font-size: 24px;
+    }
+
+    .hearphone{
+        width: 359px;
+        height: 359px;
+        position: absolute;
+        left: -28px;
+        bottom: -220px;
+    }
+
+    #copyright{
+        margin-top: 220px;
+    }
+
+    .card-contact-text{
+        font-size: 14px;
+    }
+
+    .img-shadow8{
+        bottom: 300px;
+    }
+
 }
 
 @media screen and (max-width:500px) {
     .home-description-pic{
-        width: 100%;
+        width: 99vw;
         justify-content: center;
-        margin: 50px 0;
+        margin: 50px 0px;
     }
 
     .home-description-pic img{
@@ -412,12 +1055,12 @@ CARD
     }
 
     .home-descrition-info{
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .img-shadow1{
         top: 0px;
-        right: -50px;
+        right: -20px;
         opacity: 1;
     }
 
@@ -428,7 +1071,125 @@ CARD
         left: -20px;
     }
 
-    .line img{
-        height: 73px;
+    #mobile-icon{
+        display: inline;
+        font-size: 94px;
+        margin-right: 8§px;
+    }
+
+    .card-items{
+        margin: 0;
+    }
+
+    .card-item  {
+        height: 220px;
+    }
+
+    .card-item i{
+        font-size: 94px;
+    }
+
+    .card-title i{
+        display: none;
+    }
+
+    .card-title-text{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .card-title-text div {
+        width: 80%;
+        text-align: center;
+        line-height: 38px;
+        margin-bottom: 10px;
+    }
+
+    .card-title-text p{
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .img-car {
+        margin: 0px;
+    }
+
+    .img-car img{
+        height: 98px;
+        width: 174px;
+    }
+
+    .home-desc-title{
+        font-size: 18px;
+    }
+
+    .home-desc-info{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .home-desc-img{
+        margin: 40px 0px;
+    }
+    
+    .home-desc-img img{
+        width: 225px;
+        height: 199px;
+    }
+    
+    .img-shadow5{
+        position: absolute;
+        top: -50px;
+        left: -70px;
+        display: block;
+    }
+
+    .home-solution-im img{
+        width: 60px;
+        height: 62px;
+    }
+
+    .hearphone{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: -16px;
+        bottom: -180px;
+    }
+
+    #copyright{
+        margin-top: 180px;
+    }
+    
+    .card-contact-cta a{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .card-item  {
+        height: 240px;
+    }
+
+    .img-car img{
+        height: 90px;
+        width: 150px;
+    }
+
+    .left img{
+        top: -28px;
+    }
+
+    .right img{
+        top: 170px;
+    }    
+
+    .img-shadow8{
+        bottom: 350px;
     }
 }
